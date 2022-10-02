@@ -1,0 +1,29 @@
+[{
+    "id": "1",
+    "task": "HTML",
+    "status": true
+}, {
+    "id": "2",
+    "task": "CSS",
+    "status": true
+}, {
+    "id": "3",
+    "task": "JS",
+    "status": false
+}, {
+    "id": "4",
+    "task": "React",
+    "status": true
+}, {
+    "id": "5",
+    "task": "CI/CD",
+    "status": false
+}, {
+    "id": "6",
+    "task": "Node",
+    "status": false
+}, {
+  "id": "7",
+  "task": "Express",
+  "status": false
+}]
