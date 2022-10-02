@@ -2,7 +2,7 @@ import React from "react";
 
 // Todo item component 
 
-function TodoItem({todo , onComplete}) {
+function TodoItem({todo , onComplete , onDelete}) {
   const getStyle = () => {
     return {
       textDecoration: todo.status ? 'line-through' : 'none',
@@ -15,7 +15,7 @@ function TodoItem({todo , onComplete}) {
     <div style = {getStyle()}>
       <input type="checkbox" checked={todo.status} onChange={() => onComplete(todo.id)} />
       {todo.task}
-      <button className="add-btn">X</button>
+      <button className="add-btn" onClick={() => onDelete(todo.id) } >X</button>
     </div>
   )
 }
