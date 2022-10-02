@@ -15,7 +15,9 @@ function TodoItem({todo , onComplete , onDelete}) {
     <div style = {getStyle()}>
       <input type="checkbox" checked={todo.status} onChange={() => onComplete(todo.id)} />
       {todo.task}
-      <button className="add-btn" onClick={() => onDelete(todo.id) } >X</button>
+      <button className="add-btn" onClick={() => onDelete(todo.id) } >X</button> 
+      {// pass the id of the todo to the onDelete function
+      }
     </div>
   )
 }
